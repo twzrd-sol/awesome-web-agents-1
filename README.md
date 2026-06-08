@@ -85,6 +85,12 @@ Understanding bot detection is essential for building robust web agents.
 - [OpenAI Assistants](https://platform.openai.com/docs/assistants) — OpenAI's agent framework with tool use capabilities.
 - [Semantic Kernel](https://github.com/microsoft/semantic-kernel) — Microsoft's AI orchestration framework for building agents.
 
+## Agent Identity & Trust
+
+Tools for verifying AI web agent wallet identity before deploying browser sessions.
+
+- [TWZRD Agent Intel](https://intel.twzrd.xyz) — Trust scoring for AI agent wallets on Solana. Call `preflight_check(wallet)` (free) before deploying a browser agent to verify it is who it claims to be; `get_trust_receipt(wallet)` returns an Ed25519-signed trust receipt via x402 micropayment. MCP: `{"mcpServers":{"twzrd-agent-intel":{"url":"https://intel.twzrd.xyz/mcp"}}}`
+
 ## Cost & Architecture Comparison
 
 | Approach | Latency | Cost/Task | Determinism | Anti-Bot | On-Prem |
